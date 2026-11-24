@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "322324124912",
+    "project_id": "vitafile-53157",
+    "storage_bucket": "vitafile-53157.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322324124912:android:3df7b97d1a52e6b2335e35",
+        "android_client_info": {
+          "package_name": "com.vitafile.vitafile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiKwFNdE9UaKG5caTQ8fs2ICtlRyZKCyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,56 @@
+2026-11-24 11:17:45.527: [INFO] CurrentProfilePath: C:\Users\F16\AppData\Local\Temp\flutter_tools.ddb951c3\flutter_tools_chrome_device.f6f85b90\Default
+2026-11-24 11:17:45.527: [INFO] Profiles total count: 1
+2026-11-24 11:17:45.527: [INFO] Profile: name=ملف التعريف 1 path=C:\Users\F16\AppData\Local\Temp\flutter_tools.ddb951c3\flutter_tools_chrome_device.f6f85b90\Default lastActive=null
+2026-11-24 11:17:45.527: [INFO] LastUsedProfileDir: C:\Users\F16\AppData\Local\Temp\flutter_tools.ddb951c3\flutter_tools_chrome_device.f6f85b90\Default
+2026-11-24 11:17:45.527: [INFO] VisibilityChanged: 0
+2026-11-24 11:17:45.650: [INFO] OnDoneLoading sync enabled: 0
+2026-11-24 11:17:45.650: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-24 11:17:45.650: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-24 11:17:45.650: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-24 11:17:45.782: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-24 11:17:53.847: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-24 11:17:53.899: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-24 11:17:53.933: [INFO] Primary account changed.
+2026-11-24 11:17:53.933: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-11-24 11:17:53.979: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-24 11:17:54.057: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-24 11:17:59.628: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-24 11:17:59.631: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-24 11:17:59.631: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-24 11:18:01.190: [INFO] Sync initialization duration: 6357ms
+2026-11-24 11:21:09.757: [INFO] BookmarksSnapshot Shutdown total=1 bar=0 other=1 mobile=0 showBar=0 showBarNTP=1
+2026-11-24 12:02:51.115: [INFO] CurrentProfilePath: C:\Users\F16\AppData\Local\Temp\flutter_tools.d6a8fa59\flutter_tools_chrome_device.cf9841cb\Default
+2026-11-24 12:02:51.115: [INFO] Profiles total count: 1
+2026-11-24 12:02:51.115: [INFO] Profile: name=ملف التعريف 1 path=C:\Users\F16\AppData\Local\Temp\flutter_tools.d6a8fa59\flutter_tools_chrome_device.cf9841cb\Default lastActive=null
+2026-11-24 12:02:51.115: [INFO] LastUsedProfileDir: C:\Users\F16\AppData\Local\Temp\flutter_tools.d6a8fa59\flutter_tools_chrome_device.cf9841cb\Default
+2026-11-24 12:02:51.115: [INFO] VisibilityChanged: 0
+2026-11-24 12:02:52.760: [INFO] OnDoneLoading sync enabled: 1
+2026-11-24 12:02:52.760: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-24 12:02:52.760: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-24 12:02:52.760: [INFO] BookmarksSnapshot Startup total=1 bar=0 other=1 mobile=0 showBar=0 showBarNTP=1
+2026-11-24 12:03:05.446: [INFO] Sync initialization duration: 12678ms
+2026-11-24 12:22:40.738: [INFO] BookmarksSnapshot Shutdown total=1 bar=0 other=1 mobile=0 showBar=0 showBarNTP=1
+2026-11-24 13:24:50.366: [INFO] CurrentProfilePath: C:\Users\F16\AppData\Local\Temp\flutter_tools.461e53b6\flutter_tools_chrome_device.426d4fcd\Default
+2026-11-24 13:24:50.366: [INFO] Profiles total count: 1
+2026-11-24 13:24:50.366: [INFO] Profile: name=ملف التعريف 1 path=C:\Users\F16\AppData\Local\Temp\flutter_tools.461e53b6\flutter_tools_chrome_device.426d4fcd\Default lastActive=null
+2026-11-24 13:24:50.366: [INFO] LastUsedProfileDir: C:\Users\F16\AppData\Local\Temp\flutter_tools.461e53b6\flutter_tools_chrome_device.426d4fcd\Default
+2026-11-24 13:24:50.366: [INFO] VisibilityChanged: 0
+2026-11-24 13:24:50.495: [INFO] OnDoneLoading sync enabled: 0
+2026-11-24 13:24:50.495: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-24 13:24:50.495: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-24 13:24:50.495: [INFO] BookmarksSnapshot Startup total=1 bar=0 other=1 mobile=0 showBar=0 showBarNTP=1
+2026-11-24 13:24:55.715: [INFO] Primary account changed.
+2026-11-24 13:24:55.715: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-11-24 13:25:05.002: [INFO] Sync initialization duration: 14503ms
+2026-11-24 13:54:39.807: [INFO] BookmarksSnapshot Shutdown total=1 bar=0 other=1 mobile=0 showBar=0 showBarNTP=1
+2026-11-24 14:13:16.231: [INFO] CurrentProfilePath: C:\Users\F16\AppData\Local\Temp\flutter_tools.b69a22df\flutter_tools_chrome_device.e056dd62\Default
+2026-11-24 14:13:16.231: [INFO] Profiles total count: 1
+2026-11-24 14:13:16.231: [INFO] Profile: name=ملف التعريف 1 path=C:\Users\F16\AppData\Local\Temp\flutter_tools.b69a22df\flutter_tools_chrome_device.e056dd62\Default lastActive=null
+2026-11-24 14:13:16.231: [INFO] LastUsedProfileDir: C:\Users\F16\AppData\Local\Temp\flutter_tools.b69a22df\flutter_tools_chrome_device.e056dd62\Default
+2026-11-24 14:13:16.231: [INFO] VisibilityChanged: 0
+2026-11-24 14:13:16.444: [INFO] OnDoneLoading sync enabled: 1
+2026-11-24 14:13:16.444: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-24 14:13:16.444: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-24 14:13:16.444: [INFO] BookmarksSnapshot Startup total=1 bar=0 other=1 mobile=0 showBar=0 showBarNTP=1
+2026-11-24 14:13:25.633: [INFO] Sync initialization duration: 9183ms
+2026-11-24 14:34:07.912: [INFO] BookmarksSnapshot Shutdown total=1 bar=0 other=1 mobile=0 showBar=0 showBarNTP=1
