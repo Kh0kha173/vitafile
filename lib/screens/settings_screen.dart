@@ -112,7 +112,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // يسمع لتغيير اللغة والوضع فتتحدث الصفحة فوراً
     return ValueListenableBuilder<Locale>(
       valueListenable: appLocaleNotifier,
       builder: (context, locale, _) => ValueListenableBuilder<ThemeMode>(
@@ -140,14 +139,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
         _tr('App Preferences & Compliance', 'تفضيلات التطبيق والخصوصية'),
         showBackButton: !widget.isEmbedded,
         actions: [
-          // أيقونة اللغة
           IconButton(
             tooltip: _tr('Language', 'اللغة'),
             icon: const Icon(Icons.translate_rounded,
                 color: AppColors.primaryTeal, size: 22),
             onPressed: () => _setLanguage(_isAr ? 'en' : 'ar'),
           ),
-          // أيقونة الدارك / لايت مود
           IconButton(
             tooltip: _tr('Dark / Light mode', 'الوضع الداكن / الفاتح'),
             icon: Icon(

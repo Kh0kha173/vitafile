@@ -101,7 +101,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        // Illustration card
                         Container(
                           width: double.infinity,
                           height: 290,
@@ -148,7 +147,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   ),
                                 ),
                               ),
-                              // Giant circle icon
                               Container(
                                 width: 130,
                                 height: 130,

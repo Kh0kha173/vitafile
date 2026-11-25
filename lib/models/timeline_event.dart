@@ -3,7 +3,7 @@ class TimelineEvent {
   final String title;
   final String date;
   final int year;
-  final String category; // Consultation, Imaging, Surgery, Vaccination, Lab
+  final String category;
   final String doctorName;
   final String facility;
   final String diagnosis;

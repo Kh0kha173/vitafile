@@ -1,3 +1,4 @@
+
 import 'dart:async';
 import 'package:flutter/material.dart';
 import '../core/constants/app_colors.dart';
@@ -10,34 +11,55 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin {
+class _SplashScreenState extends State<SplashScreen>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
   late Animation<double> _fadeAnimation;
+
   Timer? _timer;
 
   @override
   void initState() {
     super.initState();
+
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 1400),
     )..repeat(reverse: true);
 
-    _scaleAnimation = Tween<double>(begin: 0.95, end: 1.05).animate(
-      CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
+    _scaleAnimation = Tween<double>(
+      begin: 0.95,
+      end: 1.05,
+    ).animate(
+      CurvedAnimation(
+        parent: _controller,
+        curve: Curves.easeInOut,
+      ),
     );
 
-    _fadeAnimation = Tween<double>(begin: 0.8, end: 1.0).animate(
-      CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
+    _fadeAnimation = Tween<double>(
+      begin: 0.8,
+      end: 1.0,
+    ).animate(
+      CurvedAnimation(
+        parent: _controller,
+        curve: Curves.easeInOut,
+      ),
     );
 
-    _timer = Timer(const Duration(milliseconds: 2400), _navigateToNext);
+    _timer = Timer(
+      const Duration(milliseconds: 2400),
+      _navigateToNext,
+    );
   }
 
   void _navigateToNext() {
     if (!mounted) return;
-    Navigator.of(context).pushReplacementNamed(AppRoutes.onboarding);
+
+    Navigator.of(context).pushReplacementNamed(
+      AppRoutes.onboarding,
+    );
   }
 
   @override
@@ -55,7 +77,6 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         onTap: _navigateToNext,
         child: Stack(
           children: [
-            // Subtle medical cross background pattern
             Positioned(
               top: -80,
               right: -80,
@@ -68,6 +89,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                 ),
               ),
             ),
+
             Positioned(
               bottom: -100,
               left: -60,
@@ -95,57 +117,15 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                         ),
                       );
                     },
-                    child: Container(
-                      width: 110,
-                      height: 110,
-                      decoration: BoxDecoration(
-                        gradient: AppColors.tealGradient,
-                        borderRadius: BorderRadius.circular(32),
-                        boxShadow: [
-                          BoxShadow(
-                            color: AppColors.primaryTeal.withOpacity(0.35),
-                            blurRadius: 28,
-                            offset: const Offset(0, 12),
-                          ),
-                        ],
-                      ),
-                      child: Stack(
-                        alignment: Alignment.center,
-                        children: [
-                          // Cross + Shield glow
-                          Container(
-                            width: 80,
-                            height: 80,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                color: Colors.white.withOpacity(0.25),
-                                width: 2,
-                              ),
-                            ),
-                          ),
-                          const Icon(
-                            Icons.favorite_rounded,
-                            size: 46,
-                            color: AppColors.white,
-                          ),
-                          Positioned(
-                            top: 22,
-                            right: 22,
-                            child: Container(
-                              width: 14,
-                              height: 14,
-                              decoration: const BoxDecoration(
-                                color: AppColors.medicalBlueLight,
-                                shape: BoxShape.circle,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
+                    child: Image.asset(
+                      'assets/images/vitafile_logo.png',
+                      width: 280,
+                      height: 220,
+                      fit: BoxFit.contain,
                     ),
                   ),
-                  const SizedBox(height: 28),
+
+                  const SizedBox(height: 20),
                   RichText(
                     text: const TextSpan(
                       text: 'Vita',
@@ -167,7 +147,9 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                       ],
                     ),
                   ),
+
                   const SizedBox(height: 8),
+
                   const Text(
                     'Your Encrypted Health Vault',
                     style: TextStyle(
@@ -177,10 +159,13 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                       letterSpacing: 0.2,
                     ),
                   ),
+
                   const SizedBox(height: 36),
-                  // Loading pill
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 8,
+                    ),
                     decoration: BoxDecoration(
                       color: AppColors.primaryTealSoft,
                       borderRadius: BorderRadius.circular(20),
@@ -193,7 +178,9 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                           height: 14,
                           child: CircularProgressIndicator(
                             strokeWidth: 2,
-                            valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryTeal),
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                              AppColors.primaryTeal,
+                            ),
                           ),
                         ),
                         SizedBox(width: 10),
@@ -211,7 +198,6 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                 ],
               ),
             ),
-            // Bottom security badge
             Positioned(
               bottom: 32,
               left: 0,
@@ -220,7 +206,11 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: const [
-                    Icon(Icons.shield_outlined, size: 16, color: AppColors.textMuted),
+                    Icon(
+                      Icons.shield_outlined,
+                      size: 16,
+                      color: AppColors.textMuted,
+                    ),
                     SizedBox(width: 6),
                     Text(
                       '256-bit AES • HIPAA & GDPR Compliant',

@@ -1,11 +1,11 @@
 class Medication {
   final String id;
   final String name;
-  final String dosage; // e.g. "500 mg"
-  final String type; // Tablet, Capsule, Inhaler, Injection
-  final String frequency; // "Once daily", "Twice daily", "As needed"
-  final List<String> scheduledTimes; // ["08:00 AM", "08:00 PM"]
-  final String instructions; // "Take with meals"
+  final String dosage;
+  final String type;
+  final String frequency;
+  final List<String> scheduledTimes;
+  final String instructions;
   final String prescribedBy;
   final int pillsRemaining;
   final int totalPills;

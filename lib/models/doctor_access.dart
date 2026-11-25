@@ -7,7 +7,7 @@ class DoctorAccessGrant {
   final String durationLabel;
   final String grantedAt;
   final String expiresAt;
-  final String status; // "Active", "Expired", "Revoked"
+  final String status;
   final List<String> permissions;
   final List<AccessAuditLog> logs;
 

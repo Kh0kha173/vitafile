@@ -43,7 +43,6 @@ class _UploadScreenState extends State<UploadScreen> {
     'أخرى',
   ];
 
-  // عرض رسالة للمستخدم
   void _showMessage(String message) {
     if (!mounted) return;
 
@@ -52,7 +51,6 @@ class _UploadScreenState extends State<UploadScreen> {
     );
   }
 
-  // اختيار ملف PDF
   Future<void> _pickPDF() async {
     if (_isPicking) return;
 
@@ -87,7 +85,6 @@ class _UploadScreenState extends State<UploadScreen> {
     }
   }
 
-  // اختيار صورة من المعرض
   Future<void> _pickGallery() async {
     if (_isPicking) return;
 
@@ -120,8 +117,6 @@ class _UploadScreenState extends State<UploadScreen> {
       }
     }
   }
-
-  // فتح الكاميرا والتقاط صورة
   Future<void> _openCamera() async {
     if (_isPicking) return;
 
@@ -154,8 +149,6 @@ class _UploadScreenState extends State<UploadScreen> {
       }
     }
   }
-
-  // حذف الملف
   void _removeFile() {
     setState(() {
       _selectedBytes = null;
@@ -163,8 +156,6 @@ class _UploadScreenState extends State<UploadScreen> {
       _isImage = false;
     });
   }
-
-  // حفظ بيانات الملف
   void _saveRecord() {
     if (_selectedBytes == null) {
       _showMessage('اختاري ملف أو صورة أولاً');
@@ -175,8 +166,6 @@ class _UploadScreenState extends State<UploadScreen> {
       _showMessage('اكتبي عنوان الملف');
       return;
     }
-
-    // بيانات الملف جاهزة للربط مع Firebase
     debugPrint('Type: $_selectedType');
     debugPrint('File: $_fileName');
     debugPrint('Doctor: ${_doctorController.text}');
@@ -246,8 +235,6 @@ class _UploadScreenState extends State<UploadScreen> {
               ),
 
               const SizedBox(height: 15),
-
-              // مصادر رفع الملفات
               Row(
                 children: [
                   Expanded(
@@ -281,8 +268,6 @@ class _UploadScreenState extends State<UploadScreen> {
               ),
 
               const SizedBox(height: 25),
-
-              // معاينة الملف المختار
               if (_isPicking)
                 const Center(
                   child: Padding(
@@ -414,8 +399,6 @@ class _UploadScreenState extends State<UploadScreen> {
               ),
 
               const SizedBox(height: 30),
-
-              // زر الحفظ
               SizedBox(
                 width: double.infinity,
                 height: 55,
@@ -445,8 +428,6 @@ class _UploadScreenState extends State<UploadScreen> {
       ),
     );
   }
-
-  // تصميم أزرار المصادر
   Widget _sourceButton({
     required IconData icon,
     required String title,

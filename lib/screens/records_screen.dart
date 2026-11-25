@@ -18,10 +18,6 @@ class _RecordsScreenState extends State<RecordsScreen> {
   String _searchQuery = '';
   final TextEditingController _searchController = TextEditingController();
   final List<MedicalRecord> _records = [];
-
-  // ---------------------------------------------------------------
-  // Localization
-  // ---------------------------------------------------------------
   bool get _isAr => appLocaleNotifier.value.languageCode == 'ar';
   String _tr(String en, String ar) => _isAr ? ar : en;
 
@@ -56,8 +52,6 @@ class _RecordsScreenState extends State<RecordsScreen> {
         return _tr('Vaccines', 'تطعيمات');
     }
   }
-
-  // null = "All"
   static const List<RecordCategory?> _categoryValues = [
     null,
     RecordCategory.labTest,
@@ -89,10 +83,6 @@ class _RecordsScreenState extends State<RecordsScreen> {
   void _openUpload() {
     Navigator.pushNamed(context, '/upload');
   }
-
-  // ---------------------------------------------------------------
-  // Detail sheet
-  // ---------------------------------------------------------------
   void _showRecordDetailSheet(MedicalRecord record) {
     showModalBottomSheet(
       context: context,
@@ -214,10 +204,6 @@ class _RecordsScreenState extends State<RecordsScreen> {
       ),
     );
   }
-
-  // ---------------------------------------------------------------
-  // Build
-  // ---------------------------------------------------------------
   @override
   Widget build(BuildContext context) {
     final records = _filteredRecords;
@@ -225,7 +211,6 @@ class _RecordsScreenState extends State<RecordsScreen> {
 
     final body = Column(
       children: [
-        // Search + Upload
         Padding(
           padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
           child: Row(
@@ -275,8 +260,6 @@ class _RecordsScreenState extends State<RecordsScreen> {
             ],
           ),
         ),
-
-        // Categories
         SizedBox(
           height: 44,
           child: ListView.separated(
@@ -298,8 +281,6 @@ class _RecordsScreenState extends State<RecordsScreen> {
             ),
           ),
         ),
-
-        // List
         Expanded(
           child: records.isEmpty
               ? Center(

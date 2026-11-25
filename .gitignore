@@ -1,2 +1,5 @@
-nvitafile.zipnweb/.idea/
-
+.dart_tool/
+build/
+.idea/
+web/.idea/
+*.zip
